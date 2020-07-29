@@ -1,26 +1,26 @@
 [
   {
     "id": 0,
-    "name": "Telegram",
-    "link": "https://t.me/smakosh",
-    "icon": "/icons/telegram.svg"
+    "name": "GitHub",
+    "link": "https://github.com/cierrabeck",
+    "icon": "assets/icons/git.svg"
   },
   {
     "id": 1,
-    "name": "Github",
-    "link": "https://github.com/smakosh",
-    "icon": "/icons/github.svg"
+    "name": "Instagram",
+    "link": "https://instagram.com/cierra_beck/",
+    "icon": "assets/icons/git.svg"
   },
   {
     "id": 2,
-    "name": "StackOverflow",
-    "link": "https://stackoverflow.com/users/story/7396786",
-    "icon": "/icons/stackoverflow.svg"
+    "name": "Medium",
+    "link": "https://medium.com/@cierrabeck422",
+    "icon": "assets/icons/git.svg"
   },
   {
     "id": 3,
-    "name": "Twitter",
-    "link": "https://twitter.com/smakosh",
-    "icon": "/icons/twitter.svg"
+    "name": "LinkedIn",
+    "link": "https://linkedin.com/in/cierra-beck-4363aab0/",
+    "icon": "assets/icons/git.svg"
   }
 ]
