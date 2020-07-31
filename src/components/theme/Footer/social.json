@@ -3,24 +3,24 @@
     "id": 0,
     "name": "GitHub",
     "link": "https://github.com/cierrabeck",
-    "icon": "assets/icons/git.svg"
+    "icon": "/icons/git.svg"
   },
   {
     "id": 1,
     "name": "Instagram",
     "link": "https://instagram.com/cierra_beck/",
-    "icon": "assets/icons/git.svg"
+    "icon": "/icons/instagram.svg"
   },
   {
     "id": 2,
     "name": "Medium",
     "link": "https://medium.com/@cierrabeck422",
-    "icon": "assets/icons/git.svg"
+    "icon": "/icons/medium.svg"
   },
   {
     "id": 3,
     "name": "LinkedIn",
     "link": "https://linkedin.com/in/cierra-beck-4363aab0/",
-    "icon": "assets/icons/git.svg"
+    "icon": "/icons/linkedin.svg"
   }
 ]

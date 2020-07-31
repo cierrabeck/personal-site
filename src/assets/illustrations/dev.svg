@@ -21,7 +21,6 @@
             <g id="scrollview" transform="translate(98.000000, 98.000000)">
                 <g id="Rectangle">
                     <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                    <rect stroke="#E1CDB7" stroke-width="14" stroke-linejoin="square" fill="#AARRGGBB" fill-rule="evenodd" x="7" y="7" width="814" height="814"></rect>
                 </g>
                 <g id="picture" transform="translate(507.000000, 266.000000)">
                     <mask id="mask-4" fill="white">
