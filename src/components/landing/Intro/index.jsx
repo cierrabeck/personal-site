@@ -4,18 +4,20 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Header, Footer } from 'components/theme';
 import { Container, Button } from 'components/common';
 import image from 'assets/illustrations/image.png';
-import { Wrapper, Background, IntroWrapper, Details, Thumbnail } from './styles';
+import { Animation } from 'components/common';
+import { Wrapper, Background, IntroWrapper, Details, Thumbnail} from './styles';
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
     <Background>
-      <Wrapper>
+      <Animation />
+      <Wrapper theme={theme}>
       <Header />
       <IntroWrapper as={Container}>
         <Details theme={theme}>
-          <h1>Hi! Welcome to my site</h1>
+          <h1>Hi!</h1>
           <h4>I’m Cierra, a New York City based software developer passionate about the social applications of technology and big data.</h4>
         </Details>
         <Thumbnail>

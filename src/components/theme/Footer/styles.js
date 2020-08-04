@@ -1,20 +1,15 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 28rem 0 4rem 0;
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
 
   @media (max-width: 1960px) {
-    padding: 14rem 0 4rem;
+    padding: 0rem 0 0rem;
   }
 `;
 
 export const Flex = styled.div`
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  align-items: flex-start;
 
   @media (max-width: 680px) {
     flex-direction: column;
@@ -24,31 +19,12 @@ export const Flex = styled.div`
 `;
 
 export const Links = styled.div`
-  display: flex;
-  align-items: center;
 
   a {
-    margin: 0 0.5rem;
+    margin-right: 1rem;
 
-    img {
-      margin: 0;
-    }
-
-    &:first-child,
-    &:last-child {
-      margin: 0;
-    }
+    box-shadow: 0 0 0 rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
   }
 `;
 
-export const Details = styled.div`
-  h2,
-  a,
-  span {
-    color: #212121;
-  }
-
-  @media (max-width: 680px) {
-    margin-bottom: 2rem;
-  }
-`;

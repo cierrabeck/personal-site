@@ -260,7 +260,7 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 0rem;
       color: inherit;
       font-weight: bold;
       text-rendering: optimizeLegibility;
@@ -308,14 +308,14 @@ export const Global = createGlobalStyle`
       margin-bottom: 1.45rem;
     }
     ul {
-      margin-left: 1.45rem;
+      margin-left: 0;
       margin-right: 0;
       margin-top: 0;
       padding-bottom: 0;
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 0rem;
       list-style-position: outside;
       list-style-image: none;
     }

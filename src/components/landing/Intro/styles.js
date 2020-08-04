@@ -4,14 +4,18 @@ export const Background = styled.div`
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
 `;
 
 export const Wrapper = styled.div`
+  background-color: ${({ theme }) => (theme === 'light' ? '#fff' : '#212121')};
   border-style: solid;  
   border-color: #E1CDB7;
   border-width: 14px;
-  margin: 40px;
-  padding-bottom: 4rem;
+  margin: 7%;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 `;
 
 export const IntroWrapper = styled.div`
@@ -48,7 +52,7 @@ export const Details = styled.div`
   }
 
   h4 {
-    margin-bottom: 2.5rem;
+    margin-bottom: 0rem;
     font-size: 22pt;
     font-weight: normal;
     color: ${({ theme }) => (theme === 'light' ? '#707070' : '#e6e6e6')};
@@ -72,6 +76,7 @@ export const Thumbnail = styled.div`
 
   img {
     width: 50%;
+    margin-top: 1.45rem;
     align: right;
   }
 `;

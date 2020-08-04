@@ -1,19 +1,26 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 1.5rem 0;
+  padding: 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 `;
 
 export const Brand = styled.a`
-  color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
-  font-size: 36pt;
-  font-weight: bold;
-  font-shadow: 10pt;
-  text-shadow: 0 10px 4px #E5D0D0;
+  --fill-color: #E5D0D0;
+  font: 700 4rem Raleway, sans-serif;
   text-decoration: none;
-  border-bottom: none;
-  text
+  text-transform: uppercase;
+  --border-color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
+	-webkit-text-stroke: 2px var(--border-color);
+	background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+  color: transparent;
+  -webkit-background-clip: text;
+	background-clip: text;
+	transition: 0.5s linear;
+
+	&:hover {
+	  background-size: 100%;
+	}
 `;
