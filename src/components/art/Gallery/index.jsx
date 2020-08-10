@@ -4,10 +4,13 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Header, Footer } from 'components/theme';
 import { Container, Button } from 'components/common';
 import image from 'assets/illustrations/image.png';
+import drawing1 from 'assets/illustrations/drawing1.png'
+import drawing2 from 'assets/illustrations/drawing2.png'
+import drawing3 from 'assets/illustrations/drawing3.png'
 import { Animation } from 'components/common';
 import { Wrapper, Background, IntroWrapper, Details, Thumbnail} from './styles';
 
-export const Intro = () => {
+export const Gallery = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -15,13 +18,18 @@ export const Intro = () => {
       <Animation />
       <Wrapper theme={theme}>
       <Header />
-      <IntroWrapper as={Container}>
-        <Details theme={theme}>
-          <h1>Hi!</h1>
-          <h4>I’m Cierra, a New York City based software developer passionate about the social applications of technology and big data.</h4>
+      <Details theme={theme} as={Container}>
+        {/* <h2> friends </h2> */}
         </Details>
+      <IntroWrapper as={Container}>
         <Thumbnail theme={theme}>
-          <img src={image} align='right' alt="Cierra" />
+          <img src={drawing1} align='center' alt="1" />
+        </Thumbnail>
+        <Thumbnail theme={theme}>
+          <img src={drawing2} align='center' alt="2" />
+        </Thumbnail>
+        <Thumbnail theme={theme}>
+          <img src={drawing3} align='center' alt="3" />
         </Thumbnail>
       </IntroWrapper>
       <Footer />

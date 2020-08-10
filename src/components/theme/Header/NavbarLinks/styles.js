@@ -1,21 +1,5 @@
 import styled from 'styled-components';
 
-//   a {
-//     color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
-// 	text-decoration: none;
-// 	background: #F2E6E6;
-// 	text-align: center;
-// 	width: 75px;
-// 	padding: 10px;
-// 	border-right: 50px;
-// 	outline: 3px solid #E5D0D0;
-//   	outline-offset: 5px;
-//   }
-
-//   a:hover {
-// 	outline-offset: 0px;
-//   }
-
 export const Wrapper = styled.div`
 
 a {
@@ -35,6 +19,10 @@ a {
 	padding: 4px 0;
 
 	&:hover {
+	  background-size: 100%;
+	}
+
+	&:active {
 	  background-size: 100%;
 	}
   }
