@@ -5,6 +5,7 @@ export const Background = styled.div`
   background-position: right top;
   background-repeat: no-repeat;
   position: absolute;
+  width: 100%;
   z-index: 1;
 `;
 
@@ -20,7 +21,7 @@ export const Wrapper = styled.div`
 `;
 
 export const IntroWrapper = styled.div`
-  padding: 4rem 0;
+  padding: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,33 +32,22 @@ export const IntroWrapper = styled.div`
 `;
 
 export const Details = styled.div`
-  flex: 1;
+  padding-left: 1rem;
+  display: flex;
 
   @media (max-width: 960px) {
     width: 100%;
     margin-bottom: 2rem;
   }
-  h1 {
+
+  h2 {
     font-family: 'Merriweather', serif;
-    margin-bottom: 2rem;
-    font-size: 26pt;
-    color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
-
-    @media (max-width: 680px) {
-      font-size: 20pt;
-    }
-  }
-
-  h4 {
     font-weight: 100;
     font-style: italic;
-    font-family: 'Merriweather', serif;
+    justify-content: center;
     margin-bottom: 0rem;
     font-size: 22pt;
+    font-weight: normal;
     color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
 
     @media (max-width: 960px) {
@@ -72,25 +62,21 @@ export const Details = styled.div`
 
 export const Thumbnail = styled.div`
   flex: 1;
+  justify-content: center;
+  padding-right: 0.75rem;
 
   @media (max-width: 960px) {
     width: 100%;
-    display: flex;
-    justify-content: center;
   }
 
   img {
-    width: 75%;
-    margin-top: 1.45rem;
-    align: right;
-    height: auto;
-
     @media (max-width: 960px) {
-      width: 85%;
-      height: auto;
-      align: center;
+      padding-left: 0.75rem;
     }
 
+    width: 100%;
+    align-self: center;
+    height: 100%;
     border-radius: 25%;
     background: #E5D0D0;
     overflow: hidden;
