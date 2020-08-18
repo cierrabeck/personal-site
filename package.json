@@ -28,6 +28,7 @@
     "react-is": "^16.8",
     "react-typography": "^0.16.19",
     "styled-components": "^5.1.1",
+    "surge": "^0.21.6",
     "typography": "^0.16.19",
     "typography-theme-elk-glen": "^0.16.19",
     "typography-theme-fairy-gates": "^0.16.19",
