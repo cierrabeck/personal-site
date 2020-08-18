@@ -33,10 +33,6 @@ a {
 			align-items: center;
 			display: flex;
 
-			@media (max-width: 960px) {
-					display: none;
-			}
-
 			a {
 					margin-right: 1rem;
 

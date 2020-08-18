@@ -75,12 +75,19 @@ export const Thumbnail = styled.div`
 
   @media (max-width: 960px) {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   img {
     width: 75%;
     margin-top: 1.45rem;
     align: right;
+
+    @media (max-width: 960px) {
+      width: 85%;
+      align: center;
+    }
 
     border-radius: 25%;
     background: #E5D0D0;

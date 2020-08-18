@@ -70,9 +70,12 @@ export const Thumbnail = styled.div`
   }
 
   img {
+    @media (max-width: 960px) {
+      padding-left: 0.75rem;
+    }
+
     width: 100%;
     align-self: center;
-
     height: 100%;
     border-radius: 25%;
     background: #E5D0D0;
