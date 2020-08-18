@@ -7,6 +7,9 @@ import image from 'assets/illustrations/image.png';
 import drawing1 from 'assets/illustrations/drawing1.png'
 import drawing2 from 'assets/illustrations/drawing2.png'
 import drawing3 from 'assets/illustrations/drawing3.png'
+import drawing4 from 'assets/illustrations/drawing4.png'
+import drawing5 from 'assets/illustrations/drawing5.png'
+import drawing6 from 'assets/illustrations/drawing6.png'
 import { Animation } from 'components/common';
 import { Wrapper, Background, IntroWrapper, Details, Thumbnail} from './styles';
 
@@ -21,6 +24,17 @@ export const Gallery = () => {
       <Details theme={theme} as={Container}>
         {/* <h2> friends </h2> */}
         </Details>
+      <IntroWrapper as={Container}>
+        <Thumbnail theme={theme}>
+          <img src={drawing4} align='center' alt="1" />
+        </Thumbnail>
+        <Thumbnail theme={theme}>
+          <img src={drawing5} align='center' alt="2" />
+        </Thumbnail>
+        <Thumbnail theme={theme}>
+          <img src={drawing6} align='center' alt="3" />
+        </Thumbnail>
+      </IntroWrapper>
       <IntroWrapper as={Container}>
         <Thumbnail theme={theme}>
           <img src={drawing1} align='center' alt="1" />
