@@ -5,7 +5,7 @@ export const Animation = () => {
 
   return (
       <Circles>
-        <ul class="circles">
+        <ul className="circles">
                     <li></li>
                     <li></li>
                     <li></li>

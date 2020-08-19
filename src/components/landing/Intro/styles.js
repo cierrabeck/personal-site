@@ -26,7 +26,7 @@ export const IntroWrapper = styled.div`
   justify-content: space-between;
 
   @media (max-width: 960px) {
-    flex-direction: column;
+    display:block;
   }
 `;
 
@@ -45,6 +45,7 @@ export const Details = styled.div`
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+      flex: 1;
     }
 
     @media (max-width: 680px) {
@@ -62,6 +63,7 @@ export const Details = styled.div`
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+      flex: 1;
     }
 
     @media (max-width: 680px) {
@@ -73,39 +75,35 @@ export const Details = styled.div`
 export const Thumbnail = styled.div`
   flex: 1;
 
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 25%;
+  background: #E5D0D0;
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+  --box-shadow-color: ${({ theme }) => (theme === 'light' ? 'rgba(255,255,255,0.6)' : 'rgba(0,0,0,0.2)')};
+  box-shadow: 
+    inset 0 0 0 24px var(--box-shadow-color);
+  transition: all 0.4s ease-in-out;
   @media (max-width: 960px) {
-    width: 100%;
-    display: flex;
+    flex: 2;
+  }
+
+  &:hover {
+    box-shadow: 
+    inset 0 0 0 1px rgba(255,255,255,0.1);
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  @media (max-width: 960px) {
     justify-content: center;
   }
 
   img {
-    width: 75%;
     margin-top: 1.45rem;
     align: right;
     height: auto;
-
-    @media (max-width: 960px) {
-      width: 85%;
-      height: auto;
-      align: center;
-    }
-
-    border-radius: 25%;
-    background: #E5D0D0;
-    overflow: hidden;
-    position: relative;
-    cursor: default;
-    --box-shadow-color: ${({ theme }) => (theme === 'light' ? 'rgba(255,255,255,0.6)' : 'rgba(0,0,0,0.2)')};
-    box-shadow: 
-      inset 0 0 0 24px var(--box-shadow-color);
-    transition: all 0.4s ease-in-out;
-
-    &:hover {
-      box-shadow: 
-      inset 0 0 0 1px rgba(255,255,255,0.1);
-      transform: scale(1);
-      opacity: 1;
-    }
   }
 `;

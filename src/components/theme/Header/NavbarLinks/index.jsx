@@ -8,7 +8,7 @@ const NavbarLinks = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <Wrapper desktop={'desktop'} theme={theme}>
-      <Link to="/tech" href="#tech">tech</Link>
+      {/* <Link to="/tech" href="#tech">tech</Link> */}
       <Link to="/art" href="#art">art</Link>
       <ToggleTheme />
     </Wrapper>

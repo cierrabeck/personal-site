@@ -1,7 +1,5 @@
 /**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
+ * Gatsby Site Config
  */
 
 require('dotenv').config({
@@ -10,6 +8,15 @@ require('dotenv').config({
 
 module.exports = {
   plugins: [
-    'gatsby-plugin-styled-components'
+    'gatsby-plugin-styled-components',
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/src/assets/illustrations/`
+      }
+    },
   ],
 }
