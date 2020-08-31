@@ -90,7 +90,6 @@ export const Thumbnail = styled.div`
 
   img {
     @media (max-width: 960px) {
-      padding-left: 0.75rem;
     }
 
     align-self: center;

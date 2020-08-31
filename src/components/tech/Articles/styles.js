@@ -63,35 +63,37 @@ export const Details = styled.div`
 export const Thumbnail = styled.div`
   flex: 1;
   justify-content: center;
-  padding-right: 0.75rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+
+  border-radius: 25%;
+  background: #E5D0D0;
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+  --box-shadow-color: ${({ theme }) => (theme === 'light' ? 'rgba(255,255,255,0.6)' : 'rgba(0,0,0,0.2)')};
+  box-shadow: 
+    inset 0 0 0 24px var(--box-shadow-color);
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    box-shadow: 
+    inset 0 0 0 1px rgba(255,255,255,0.1);
+    transform: scale(1);
+    opacity: 1;
+  }
 
   @media (max-width: 960px) {
     width: 100%;
+    margin-top: 1rem;
   }
 
   img {
     @media (max-width: 960px) {
-      padding-left: 0.75rem;
     }
 
     width: 100%;
     align-self: center;
     height: 100%;
-    border-radius: 25%;
-    background: #E5D0D0;
-    overflow: hidden;
-    position: relative;
-    cursor: default;
-    --box-shadow-color: ${({ theme }) => (theme === 'light' ? 'rgba(255,255,255,0.6)' : 'rgba(0,0,0,0.2)')};
-    box-shadow: 
-      inset 0 0 0 24px var(--box-shadow-color);
-    transition: all 0.4s ease-in-out;
-
-    &:hover {
-      box-shadow: 
-      inset 0 0 0 1px rgba(255,255,255,0.1);
-      transform: scale(1);
-      opacity: 1;
-    }
   }
 `;
