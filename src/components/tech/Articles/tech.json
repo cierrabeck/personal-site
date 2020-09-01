@@ -1,8 +1,8 @@
 [
     {
       "name": "Dated",
-      "p1": "slkdjfalskdjflsak",
-      "p2": "Dated turned into my first startup",
+      "p1": "Full description coming soon!",
+      "p2": "",
       "icons": [ {
         "id": 0,
         "name": "Website",
@@ -23,7 +23,7 @@
     },
     {
       "name": "backtrack",
-      "p1": "The Spotify public API is one of the best documented public API's, so I wanted to  asdlkfjasdlkfjslafj alsdfjladksjfs decided to blasdkfjskdlf",
+      "p1": "The Spotify public API is one of the best documented public API's, so I wanted to try and create something fun with it. I made backtrack, a web tool that analyzes your last month of listening activity to rate your music and gives you details about what you've been listening to.",
       "p2": "Try it out! I used React to build the site and Surge to deploy, check it out on Git for more of the technical details.",
       "icons": [ {
         "id": 0,
