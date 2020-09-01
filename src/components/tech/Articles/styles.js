@@ -25,75 +25,59 @@ export const IntroWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
-`;
-
-export const Details = styled.div`
-  padding-left: 1rem;
-  display: flex;
-
-  @media (max-width: 960px) {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  h2 {
-    font-family: 'Merriweather', serif;
-    font-weight: 100;
-    font-style: italic;
-    justify-content: center;
-    margin-bottom: 0rem;
-    font-size: 22pt;
-    font-weight: normal;
-    color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
-
-    @media (max-width: 680px) {
-      font-size: 16pt;
-    }
-  }
+  flex-direction: column;
 `;
 
 export const Thumbnail = styled.div`
-  flex: 1;
+  display: flex;  
+  flex-direction: row;
   justify-content: center;
   margin-right: 0.75rem;
   margin-left: 0.75rem;
+  margin-bottom: 0.75rem;
+  width: 100%;
+  border-radius: 25px;
+  background: ${({ theme }) => (theme === 'light' ? '#F4EDEC' : '#B6A6A6')};
 
-  border-radius: 25%;
-  background: #E5D0D0;
-  overflow: hidden;
-  position: relative;
-  cursor: default;
-  --box-shadow-color: ${({ theme }) => (theme === 'light' ? 'rgba(255,255,255,0.6)' : 'rgba(0,0,0,0.2)')};
-  box-shadow: 
-    inset 0 0 0 24px var(--box-shadow-color);
   transition: all 0.4s ease-in-out;
+`;
 
-  &:hover {
-    box-shadow: 
-    inset 0 0 0 1px rgba(255,255,255,0.1);
-    transform: scale(1);
-    opacity: 1;
-  }
+export const Image = styled.div`
+    flex: 1;
+    width: 50%;
+    background: #E5D0D0;
+    border-radius: 25px;
+    margin: 20px;
 
-  @media (max-width: 960px) {
-    width: 100%;
-    margin-top: 1rem;
-  }
+    &:hover {
+      box-shadow: 
+      inset 0 0 0 1px rgba(255,255,255,0.1);
+      transform: scale(1);
+      opacity: 1;
+    }
+`;
 
-  img {
-    @media (max-width: 960px) {
+export const Details = styled.div`
+    flex: 3;
+    margin: 20px;
+    h2 {
+      font-family: 'Crimson Text', serif;
+      font-style: italic;
     }
 
-    width: 100%;
+    p {
+      font-family: 'Crimson Text', serif;
+    }
+`;
+
+export const Links = styled.div`
+    flex: 1;
     align-self: center;
-    height: 100%;
-  }
+    margin-top: 20px;
+    justify-self: center;
+    a {
+      margin-right: 0.5rem;
+      box-shadow: 0 0 0 rgba(0,0,0,0.15);
+      transition: box-shadow 0.3s ease-in-out;
+    }
 `;

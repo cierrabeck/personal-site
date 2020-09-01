@@ -38,7 +38,8 @@ export const Details = styled.div`
     margin-bottom: 2rem;
   }
   h1 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
     margin-bottom: 2rem;
     font-size: 26pt;
     color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
@@ -56,7 +57,8 @@ export const Details = styled.div`
   h4 {
     font-weight: 100;
     font-style: italic;
-    font-family: 'Merriweather', serif;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
     margin-bottom: 0rem;
     font-size: 22pt;
     color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};

@@ -1,0 +1,64 @@
+[
+    {
+      "name": "Dated",
+      "p1": "slkdjfalskdjflsak",
+      "p2": "Dated turned into my first startup",
+      "icons": [ {
+        "id": 0,
+        "name": "Website",
+        "link": "https://aboutdated.com",
+        "icon": "/icons/website.svg"
+      },
+      {
+        "id": 1,
+        "name": "Instagram",
+        "link": "https://instagram.com/aboutdated/",
+        "icon": "/icons/instagram.svg"
+      }, {
+        "id": 2,
+        "name": "App",
+        "link": "https://apps.apple.com/us/app/dated-dating-management/id1512706258",
+        "icon": "/icons/app.svg"
+      }]
+    },
+    {
+      "name": "backtrack",
+      "p1": "The Spotify public API is one of the best documented public API's, so I wanted to  asdlkfjasdlkfjslafj alsdfjladksjfs decided to blasdkfjskdlf",
+      "p2": "Try it out! I used React to build the site and Surge to deploy, check it out on Git for more of the technical details.",
+      "icons": [ {
+        "id": 0,
+        "name": "Website",
+        "link": "https://backtrack.surge.sh",
+        "icon": "/icons/website.svg"
+      },
+      {
+        "id": 1,
+        "name": "Git",
+        "link": "https://github.com/cierrabeck/backtrack",
+        "icon": "/icons/git.svg"
+      }]
+    },
+    {
+      "name": "Online Classroom",
+      "p1": "blahblahblah",
+      "p2": "ssdfasdfasdfdsf",
+      "icons": [ {
+        "id": 0,
+        "name": "Website",
+        "link": "https://aboutdated.com",
+        "icon": "/icons/git.svg"
+      },
+      {
+        "id": 1,
+        "name": "Instagram",
+        "link": "https://instagram.com/aboutdated/",
+        "icon": "/icons/instagram.svg"
+      }, {
+        "id": 2,
+        "name": "App",
+        "link": "https://apps.apple.com/us/app/dated-dating-management/id1512706258",
+        "icon": "/icons/git.svg"
+      }]
+    }
+  ]
+  
